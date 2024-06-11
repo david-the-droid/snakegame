@@ -2,12 +2,12 @@
 #include <string>
 #include <time.h>
 
+#include "screen.h"
+
 int main()
 {
-    std::string str="Hello!";
-    std::cout << str;
-    std::cout << "Hiy";
+    ConsoleScreen myObj;     // Create an object of MyClass
+    myObj.CreateScreen();  // Call the method
 
-    
-
+    return 0;
 }

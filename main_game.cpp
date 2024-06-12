@@ -2,12 +2,14 @@
 #include <string>
 #include <time.h>
 
+#include "screen.h"
+#include "snake_game_logic.h"
+
 int main()
 {
-    std::string str="Hello!";
-    std::cout << str;
-    std::cout << "Hiy";
-
+    GameLogic GameObj;
+    GameObj.GameEngineInitialisation();
+    GameObj.GameEngine();
     
-
+    return 0;
 }

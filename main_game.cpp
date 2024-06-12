@@ -3,11 +3,13 @@
 #include <time.h>
 
 #include "screen.h"
+#include "snake_game_logic.h"
 
 int main()
 {
-    ConsoleScreen myObj;     // Create an object of MyClass
-    myObj.CreateScreen();  // Call the method
-
+    GameLogic GameObj;
+    GameObj.GameEngineInitialisation();
+    GameObj.GameEngine();
+    
     return 0;
 }

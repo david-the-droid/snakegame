@@ -34,6 +34,8 @@ void ConsoleScreen::DrawOnScreen(const unsigned int* patternPtr, const char symb
 
         snakeGameScreen[rowCoordinate][colCoordinate] = symbol;
     }
+
+    // todo: Update an individual part of the display on the console
 }
 
 void ConsoleScreen::DisplayScreen()

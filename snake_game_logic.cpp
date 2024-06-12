@@ -29,13 +29,15 @@ void GameLogic::GameEngine()
         case GAME_START:
         {
             GameScreen.CreateScreen();
-            GameScreen.DrawOnScreen(snakeGameBoarder, snakeGameBoarderSymbol, 36U);
+            GameScreen.DrawOnScreen(snakeGameBoarder, snakeGameBoarderSymbol, BOARDER_LEN);
             GameScreen.DisplayScreen();
         }
-        case GAME_END:
+        default: 
         {
-            // end message
+            // do nothing
         }
     }
+
+    
 }
 

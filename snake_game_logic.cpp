@@ -27,11 +27,10 @@ void GameLogic::GameEngine()
     switch(gameState)
     {
         case GAME_START:
-        {
             GameScreen.CreateScreen();
             GameScreen.DrawOnScreen(snakeGameBoarder, snakeGameBoarderSymbol, BOARDER_LEN);
             GameScreen.DisplayScreen();
-        }
+            break;
         default: 
         {
             // do nothing

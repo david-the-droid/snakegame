@@ -1,6 +1,6 @@
+#include <Windows.h>
 #include <cmath>
 #include <iostream>
-#include <Windows.h>
 
 #include "screen.h"
 
@@ -27,11 +27,12 @@ void ConsoleScreen::DrawOnScreen(const unsigned int *patternPtr,
     colCoordinate = boarderValue % 10;
     rowCoordinate = (boarderValue / 10) % 10;
 
-    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate, symbol);   
+    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate, symbol);
   }
 }
 
-void ConsoleScreen::UpdateScreen(const unsigned int xCoord, const unsigned int yCoord, const char symbol) {
+void ConsoleScreen::UpdateScreen(const unsigned int xCoord,
+                                 const unsigned int yCoord, const char symbol) {
 
   COORD Coord;
   Coord.X = xCoord;

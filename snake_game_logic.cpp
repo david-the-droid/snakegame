@@ -21,19 +21,18 @@ static ConsoleScreen GameScreen;
 
 void GameLogic::GameEngineInitialisation() { gameState = start_game; }
 
-void GameLogic::GameEngine() 
-{
-  switch (gameState){
-    case start_game:
-      GameScreen.CreateScreen();
-      GameScreen.DrawOnScreen(snakeGameBoarder, snakeGameBoarderSymbol,
-                              BOARDER_LEN);
+void GameLogic::GameEngine() {
+  switch (gameState) {
+  case start_game:
+    GameScreen.CreateScreen();
+    GameScreen.DrawOnScreen(snakeGameBoarder, snakeGameBoarderSymbol,
+                            BOARDER_LEN);
 
-      GameScreen.DrawOnScreen(snakePos, snakeSymbol, SNAKE_LEN);
-      break;
+    GameScreen.DrawOnScreen(snakePos, snakeSymbol, SNAKE_LEN);
+    break;
 
-    default: 
-      // do nothing
-      break;
+  default:
+    // do nothing
+    break;
   }
 }

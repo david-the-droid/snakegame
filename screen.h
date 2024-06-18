@@ -6,15 +6,15 @@
 
 struct test;
 
-class ConsoleScreen
-{ // The class
+class ConsoleScreen { // The class
 private:
-    char snakeGameScreen[SNAKE_GAME_ROW][SNAKE_GAME_COL] = {};
+  char snakeGameScreen[SNAKE_GAME_ROW][SNAKE_GAME_COL] = {};
 
-public:                  // Access specifier
-    void CreateScreen(); // Method/function declaration
-    void DrawOnScreen(const unsigned int *patternPtr, const char symbol, const unsigned int length);
-    void DisplayScreen();
+public:                // Access specifier
+  void CreateScreen(); // Method/function declaration
+  void DrawOnScreen(const unsigned int *patternPtr, const char symbol,
+                    const unsigned int length);
+  void DisplayScreen();
 };
 
 #endif

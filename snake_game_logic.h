@@ -1,12 +1,11 @@
 #ifndef SNAKE_GAME_LOGIC_H
 #define SNAKE_GAME_LOGIC_H
 
-class GameLogic
-{
+class GameLogic {
 private:
 public:
-    void GameEngineInitialisation();
-    void GameEngine();
+  void GameEngineInitialisation();
+  void GameEngine();
 };
 
 #endif

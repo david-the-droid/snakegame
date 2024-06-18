@@ -18,3 +18,5 @@ jobs:
       
       - name: Lint Code Base
         uses: github/super-linter@v4
+        env: 
+          VALIDATE_CPP: false

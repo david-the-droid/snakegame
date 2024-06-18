@@ -1,10 +1,9 @@
 #include <cmath>
 #include <iostream>
+#include <Windows.h>
 
 #include "screen.h"
 
-#define SNAKE_GAME_ROW (10U)
-#define SNAKE_GAME_COL (10U)
 #define BOARDER_LEN (36U)
 
 void ConsoleScreen::CreateScreen() {
@@ -12,7 +11,7 @@ void ConsoleScreen::CreateScreen() {
 
   for (indexRow = 0; indexRow < SNAKE_GAME_ROW; indexRow++) {
     for (indexCol = 0; indexCol < SNAKE_GAME_COL; indexCol++) {
-      snakeGameScreen[indexRow][indexCol] = ' ';
+      ConsoleScreen::UpdateScreen(indexRow, indexCol, ' ');
     }
   }
 }
@@ -28,19 +27,24 @@ void ConsoleScreen::DrawOnScreen(const unsigned int *patternPtr,
     colCoordinate = boarderValue % 10;
     rowCoordinate = (boarderValue / 10) % 10;
 
-    snakeGameScreen[rowCoordinate][colCoordinate] = symbol;
+    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate, symbol);   
   }
-
-  // todo: Update an individual part of the display on the console
 }
 
-void ConsoleScreen::DisplayScreen() {
-  unsigned int indexRow, indexCol;
+void ConsoleScreen::UpdateScreen(const unsigned int xCoord, const unsigned int yCoord, const char symbol) {
 
-  for (indexRow = 0; indexRow < SNAKE_GAME_ROW; indexRow++) {
-    for (indexCol = 0; indexCol < SNAKE_GAME_COL; indexCol++) {
-      std::cout << snakeGameScreen[indexRow][indexCol] << " ";
-    }
-    std::cout << "\n";
-  }
+  COORD Coord;
+  Coord.X = xCoord;
+  Coord.Y = yCoord;
+
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Coord);
+
+  snakeGameScreen[xCoord][yCoord] = symbol;
+  std::cout << snakeGameScreen[xCoord][yCoord];
+
+  /* Reset position */
+  Coord.X = 0U;
+  Coord.Y = SNAKE_GAME_ROW;
+
+  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Coord);
 }

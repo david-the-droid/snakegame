@@ -30,6 +30,7 @@
 * By default Visual Studio Code is setup to build only one file. Ideally users want to be able to build multiple files so implementations can be well structured.
 * To enable VSC to do this, navigate to ".vscode" -> tasks.json
 * Example sub directory structure:
+
 ![image](https://github.com/david-the-droid/snakegame/assets/54676795/0961cbfe-6151-4310-8092-d3c0886396e8)
 
 

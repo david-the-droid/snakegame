@@ -2,8 +2,7 @@
 #include <string>
 #include <time.h>
 
-#include "screen.h"
-#include "snake_game_logic.h"
+#include "game_engine/game_engine.h"
 
 int main() {
   GameLogic GameObj;

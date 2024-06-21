@@ -8,6 +8,8 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/*.cpp",
+                "${workspaceFolder}/game_engine/*.cpp",
+                "${workspaceFolder}/game_engine/screen/*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
@@ -32,6 +34,8 @@
                 "-fansi-escape-codes",
                 "-g",
                 "${workspaceFolder}/*.cpp",
+                "${workspaceFolder}/game_engine/*.cpp", 
+                "${workspaceFolder}/game_engine/screen/*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

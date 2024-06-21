@@ -1,5 +1,5 @@
-#include "snake_game_logic.h"
-#include "screen.h"
+#include "game_engine.h"
+#include "screen/screen.h"
 
 #define GAME_START (0U)
 #define GAME_END (2U)

@@ -5,9 +5,9 @@
 #include "game_engine/game_engine.h"
 
 int main() {
-  GameLogic GameObj;
-  GameObj.GameEngineInitialisation();
-  GameObj.GameEngine();
+  GameLogic Game;
+  Game.GameEngineInitialisation();
+  Game.GameEngine();
 
   return 0;
 }

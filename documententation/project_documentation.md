@@ -30,7 +30,7 @@
 * By default Visual Studio Code is setup to build only one file. Ideally users want to be able to build multiple files so implementations can be well structured.
 * To enable VSC to do this, navigate to ".vscode" -> tasks.json
 * Example sub directory structure:
-      ├── src/
+-     ├── src/
          main.cpp
          ├── game_engine/
              └── game_engine.cpp

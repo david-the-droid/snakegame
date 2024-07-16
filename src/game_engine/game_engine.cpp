@@ -3,18 +3,13 @@
 #include "pattern/pattern.h"
 #include "screen/screen.h"
 
-#define GAME_START (0U)
-#define GAME_END (2U)
-#define GAME_PLAY (1U)
 #define BOARDER_LEN (36U)
-#define SNAKE_LEN (5U)
 
 typedef enum { start_game = 0, play_game, end_game } states;
 
 static states gameState;
-
-static ConsoleScreen GameScreen;
 static SnakeGameLogic SnakeLogic;
+static ConsoleScreen GameScreen;
 
 void GameLogic::GameEngineInitialisation() { gameState = start_game; }
 
@@ -33,6 +28,6 @@ void GameLogic::GameEngine() {
 
   default:
     // do nothing
-    break;
+      break;
   }
 }

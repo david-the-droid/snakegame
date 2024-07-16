@@ -4,13 +4,16 @@
 
 #include "screen.h"
 
-#define BOARDER_LEN (36U)
+#define SNAKE_GAME_ROW_MAX (100U)
+#define SNAKE_GAME_COL_MAX (100U)
+
+static char snakeGameScreen[SNAKE_GAME_ROW_MAX][SNAKE_GAME_COL_MAX] = {};
 
 void ConsoleScreen::CreateScreen() {
-  int indexRow, indexCol = 0;
 
-  for (indexRow = 0; indexRow < SNAKE_GAME_ROW; indexRow++) {
-    for (indexCol = 0; indexCol < SNAKE_GAME_COL; indexCol++) {
+  int indexRow, indexCol = 0;
+  for (indexRow = 0; indexRow < SNAKE_GAME_ROW_MAX; indexRow++) {
+    for (indexCol = 0; indexCol < SNAKE_GAME_COL_MAX; indexCol++) {
       ConsoleScreen::UpdateScreen(indexRow, indexCol, ' ');
     }
   }
@@ -43,10 +46,4 @@ void ConsoleScreen::UpdateScreen(const unsigned int xCoord,
 
   snakeGameScreen[xCoord][yCoord] = symbol;
   std::cout << snakeGameScreen[xCoord][yCoord];
-
-  /* Reset position */
-  Coord.X = 0U;
-  Coord.Y = SNAKE_GAME_ROW;
-
-  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Coord);
 }

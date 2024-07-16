@@ -1,5 +1,5 @@
-#ifndef SNAKE_GAME_LOGIC_H
-#define SNAKE_GAME_LOGIC_H
+#ifndef GAME_ENGINE_H
+#define GAME_ENGINE_H
 
 class GameLogic {
 private:

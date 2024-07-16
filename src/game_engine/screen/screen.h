@@ -1,7 +1,7 @@
 #ifndef SCREEN_H
 #define SCREEN_H
 
-struct test;
+#include "../pattern/pattern.h"
 
 class ConsoleScreen {
 private:
@@ -13,8 +13,7 @@ private:
 
 public:
   void CreateScreen();
-  void DrawOnScreen(const unsigned int *patternPtr, const char symbol,
-                    const unsigned int length);
+  void DrawOnScreen(pattern_t *patternPtr, const unsigned int length);
 };
 
 #endif

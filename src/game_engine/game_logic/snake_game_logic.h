@@ -4,10 +4,10 @@
 #include "../pattern/pattern.h"
 
 class SnakeGameLogic {
-    private: 
-    public:
-    // return pointer to struct generateBoarder();   
-    pattern_t* GenerateBoarder();     
+private:
+public:
+  // return pointer to struct generateBoarder();
+  pattern_t *GenerateBoarder();
 };
 
 #endif

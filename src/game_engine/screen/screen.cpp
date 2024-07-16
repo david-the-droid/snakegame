@@ -16,7 +16,8 @@ void ConsoleScreen::CreateScreen() {
   }
 }
 
-void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr, const unsigned int length) {
+void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr,
+                                 const unsigned int length) {
   unsigned int indexRow;
   unsigned short rowCoordinate, colCoordinate;
 
@@ -26,7 +27,8 @@ void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr, const unsigned int lengt
     colCoordinate = patternContents.patternCoordinate % 10;
     rowCoordinate = (patternContents.patternCoordinate / 10) % 10;
 
-    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate, patternContents.patternSymbol);
+    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate,
+                                patternContents.patternSymbol);
   }
 }
 

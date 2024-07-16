@@ -1,7 +1,7 @@
 #include "game_engine.h"
-#include "screen/screen.h"
 #include "game_logic/snake_game_logic.h"
 #include "pattern/pattern.h"
+#include "screen/screen.h"
 
 #define GAME_START (0U)
 #define GAME_END (2U)
@@ -24,7 +24,7 @@ void GameLogic::GameEngine() {
 
     GameScreen.CreateScreen();
 
-    pattern_t* gameBoarder;
+    pattern_t *gameBoarder;
     gameBoarder = SnakeLogic.GenerateBoarder();
 
     GameScreen.DrawOnScreen(gameBoarder, BOARDER_LEN);

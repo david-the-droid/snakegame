@@ -2,8 +2,9 @@
 #define PATTERN_H
 
 typedef struct pattern_s {
-  unsigned int patternCoordinate;
-  char patternSymbol;
+  unsigned int rowCoordinate;
+  unsigned int colCoordinate;
+  char symbol;
 } pattern_t;
 
 #endif

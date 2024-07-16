@@ -25,13 +25,14 @@ void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr,
   unsigned short rowCoordinate, colCoordinate;
 
   for (indexRow = 0; indexRow < length; indexRow++) {
+
     pattern_t patternContents = *(patternPtr + indexRow);
 
-    colCoordinate = patternContents.patternCoordinate % 10;
-    rowCoordinate = (patternContents.patternCoordinate / 10) % 10;
+    rowCoordinate = patternContents.rowCoordinate;
+    colCoordinate = patternContents.colCoordinate;
 
     ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate,
-                                patternContents.patternSymbol);
+                                patternContents.symbol);
   }
 }
 

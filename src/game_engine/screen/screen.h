@@ -5,9 +5,9 @@
 
 class ConsoleScreen {
 private:
-#define SNAKE_GAME_ROW (10U)
-#define SNAKE_GAME_COL (10U)
-  char snakeGameScreen[SNAKE_GAME_ROW][SNAKE_GAME_COL] = {};
+  unsigned int snakeGameRowSize;
+  unsigned int snakeGameColSize;
+
   void UpdateScreen(unsigned int xCoord, unsigned int yCoord,
                     const char symbol);
 

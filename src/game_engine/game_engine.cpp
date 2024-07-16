@@ -28,6 +28,6 @@ void GameLogic::GameEngine() {
 
   default:
     // do nothing
-      break;
+    break;
   }
 }

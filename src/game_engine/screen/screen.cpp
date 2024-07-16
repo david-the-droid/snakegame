@@ -16,18 +16,19 @@ void ConsoleScreen::CreateScreen() {
   }
 }
 
-void ConsoleScreen::DrawOnScreen(const unsigned int *patternPtr,
-                                 const char symbol, const unsigned int length) {
+void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr,
+                                 const unsigned int length) {
   unsigned int indexRow;
   unsigned short rowCoordinate, colCoordinate;
 
   for (indexRow = 0; indexRow < length; indexRow++) {
-    unsigned int boarderValue = *(patternPtr + indexRow);
+    pattern_t patternContents = *(patternPtr + indexRow);
 
-    colCoordinate = boarderValue % 10;
-    rowCoordinate = (boarderValue / 10) % 10;
+    colCoordinate = patternContents.patternCoordinate % 10;
+    rowCoordinate = (patternContents.patternCoordinate / 10) % 10;
 
-    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate, symbol);
+    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate,
+                                patternContents.patternSymbol);
   }
 }
 

@@ -1,6 +1,6 @@
 # Changelog
 
-All changes in this project to be documented here. 
+All changes in this project to be documented here.
 
 ## [Unreleased]
 
@@ -8,4 +8,4 @@ All changes in this project to be documented here.
 Implementation:
 
 Infrastructure:
-  - Added changelog file
+- Added changelog file

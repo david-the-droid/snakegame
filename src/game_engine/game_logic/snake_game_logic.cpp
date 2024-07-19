@@ -1,6 +1,6 @@
 #include "snake_game_logic.h"
 
-OutputToRender_t *SnakeGameLogic::GenerateBoarder(unsigned short maxBoarderWidth, unsigned short maxBoarderHeight)
+OutputToRender_t *SnakeGameLogic::GenerateBoarder(unsigned short maxBoarderWidth, unsigned short maxBoarderHeight, unsigned short screenVerticalOffset)
 {
     static OutputToRender_t snakeGameBoarder;
 
@@ -35,7 +35,7 @@ OutputToRender_t *SnakeGameLogic::GenerateBoarder(unsigned short maxBoarderWidth
                 }
                 
             }     
-            unsigned short newRow = indexRow + 2;
+            unsigned short newRow = indexRow + screenVerticalOffset;
             snakeGameBoarder.pattern[patternIndex] = {newRow, indexCol, symbolToWrite};
             patternIndex++;
         }

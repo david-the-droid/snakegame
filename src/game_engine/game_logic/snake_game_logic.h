@@ -6,8 +6,7 @@
 class SnakeGameLogic {
 private:
 public:
-  // return pointer to struct generateBoarder();
-  pattern_t *GenerateBoarder();
+  OutputToRender_t *GenerateBoarder(unsigned short maxBoarderWidth, unsigned short maxBoarderHeight);
 };
 
 #endif

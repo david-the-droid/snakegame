@@ -1,16 +1,47 @@
 #include "snake_game_logic.h"
 
-#define SNAKE_GAME_BOARDER (36U)
+OutputToRender_t *SnakeGameLogic::GenerateBoarder(unsigned short maxBoarderWidth, unsigned short maxBoarderHeight)
+{
+    static OutputToRender_t snakeGameBoarder;
 
-static pattern_t snakeGameBoarder[SNAKE_GAME_BOARDER] = {
-    {0, 0, '+'}, {0, 1, '-'}, {0, 2, '-'}, {0, 3, '-'}, {0, 4, '-'},
-    {0, 5, '-'}, {0, 6, '-'}, {0, 7, '-'}, {0, 8, '-'}, {0, 9, '+'},
-    {1, 0, '|'}, {1, 9, '|'}, {2, 0, '|'}, {2, 9, '|'}, {3, 0, '|'},
-    {3, 9, '|'}, {4, 0, '|'}, {4, 9, '|'}, {5, 0, '|'}, {5, 9, '|'},
-    {6, 0, '|'}, {6, 9, '|'}, {7, 0, '|'}, {7, 9, '|'}, {8, 0, '|'},
-    {8, 9, '|'}, {9, 0, '+'}, {9, 1, '-'}, {9, 2, '-'}, {9, 3, '-'},
-    {9, 4, '-'}, {9, 5, '-'}, {9, 6, '-'}, {9, 7, '-'}, {9, 8, '-'},
-    {9, 9, '+'},
-};
+    unsigned short indexRow, indexCol = 0;
+    unsigned int colOffset = 1;
+    char symbolToWrite = ' ';
+    unsigned short patternIndex = 0;
 
-pattern_t *SnakeGameLogic::GenerateBoarder() { return snakeGameBoarder; }
+    for (indexRow = 0; indexRow < maxBoarderHeight; indexRow++) {
+        for (indexCol = 0; indexCol < maxBoarderWidth; indexCol += colOffset) {
+            if (indexRow <= 0 || indexRow == maxBoarderHeight-1)
+            {
+                if(indexCol == 0 || indexCol == maxBoarderWidth-1)
+                {
+                    symbolToWrite = '+';
+                }
+                else 
+                {
+                    symbolToWrite = '-';
+                }
+            }
+            else
+            {
+                symbolToWrite = '|';
+                if(indexCol == maxBoarderWidth-1)
+                {
+                    colOffset = 1;
+                }
+                else
+                {
+                    colOffset = maxBoarderWidth-1;
+                }
+                
+            }     
+            unsigned short newRow = indexRow + 2;
+            snakeGameBoarder.pattern[patternIndex] = {newRow, indexCol, symbolToWrite};
+            patternIndex++;
+        }
+    }
+
+    snakeGameBoarder.length = (maxBoarderHeight * maxBoarderWidth);
+    
+    return &snakeGameBoarder; 
+}

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+ 
+project(snakegame)
+ 
+add_executable(snakegame src/main_game.cpp src/game_engine/game_engine.cpp src/game_engine/game_logic/snake_game_logic.cpp src/game_engine/screen/screen.cpp)

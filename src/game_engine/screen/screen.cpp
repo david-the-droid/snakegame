@@ -26,7 +26,8 @@ void ConsoleScreen::DrawOnScreen(OutputToRender_t *screenOutputPtr) {
 
     pattern_t patternContents = screenOutputPtr->pattern[indexRow];
 
-    ConsoleScreen::UpdateScreen(patternContents.colCoordinate, patternContents.rowCoordinate,
+    ConsoleScreen::UpdateScreen(patternContents.colCoordinate,
+                                patternContents.rowCoordinate,
                                 patternContents.symbol);
   }
 }

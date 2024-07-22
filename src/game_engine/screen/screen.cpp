@@ -19,19 +19,15 @@ void ConsoleScreen::CreateScreen() {
   }
 }
 
-void ConsoleScreen::DrawOnScreen(pattern_t *patternPtr,
-                                 const unsigned int length) {
+void ConsoleScreen::DrawOnScreen(OutputToRender_t *screenOutputPtr) {
   unsigned int indexRow;
-  unsigned short rowCoordinate, colCoordinate;
 
-  for (indexRow = 0; indexRow < length; indexRow++) {
+  for (indexRow = 0; indexRow < screenOutputPtr->length; indexRow++) {
 
-    pattern_t patternContents = *(patternPtr + indexRow);
+    pattern_t patternContents = screenOutputPtr->pattern[indexRow];
 
-    rowCoordinate = patternContents.rowCoordinate;
-    colCoordinate = patternContents.colCoordinate;
-
-    ConsoleScreen::UpdateScreen(colCoordinate, rowCoordinate,
+    ConsoleScreen::UpdateScreen(patternContents.colCoordinate,
+                                patternContents.rowCoordinate,
                                 patternContents.symbol);
   }
 }

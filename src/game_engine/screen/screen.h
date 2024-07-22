@@ -13,7 +13,7 @@ private:
 
 public:
   void CreateScreen();
-  void DrawOnScreen(pattern_t *patternPtr, const unsigned int length);
+  void DrawOnScreen(OutputToRender_t *screenOutputPtr);
 };
 
 #endif

@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Lint Code Base
+    name: Dummy run
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code

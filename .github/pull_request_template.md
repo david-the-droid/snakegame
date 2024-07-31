@@ -3,7 +3,7 @@
 ## Type of change:
 - [ ] New feature
 - [ ] Infrastructure
-- [ ] Bug fix
+- [ ] Bugfix
 
 ## Description:
 - <insert description>

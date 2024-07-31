@@ -1,12 +1,12 @@
 # Summary - <PR title>
 
-## Type of change: 
+## Type of change
 - [ ] New feature
 - [ ] Infrastructure
 - [ ] Bugfix
 
-## Description: 
+## Description
 - <insert description>
 
-## Checklist: 
+## Checklist
 - [ ] Code has been formatted

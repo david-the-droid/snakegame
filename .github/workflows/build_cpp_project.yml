@@ -15,7 +15,7 @@ jobs:
         
       - name: Build Project
         run: |
-         echo ${PWD}
+         ls -l
          mkdir demo-build
          cd demo-build
          cmake .. 

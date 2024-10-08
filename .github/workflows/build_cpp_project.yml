@@ -1,0 +1,21 @@
+---
+name: Build cpp project
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  test_cpp_build:
+    runs-on: ubuntu-latest
+    name: Build demo
+    steps:
+      - name: Checkout Files
+        uses: actions/checkout@v4.1.4
+        
+      - name: Build Project
+        run: |
+         mkdir demo-build
+         cd demo-build
+         cmake .. 
+         make

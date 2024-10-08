@@ -15,6 +15,7 @@ jobs:
         
       - name: Build Project
         run: |
+         ls -l
          mkdir demo-build
          cd demo-build
          cmake .. 

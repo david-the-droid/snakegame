@@ -1,4 +1,5 @@
 #include "snake_game_logic.h"
+#include "../pattern/pattern.h"
 
 #define OFFSET_ONE (1U)
 #define ZERO (0U)

@@ -1,5 +1,5 @@
 ---
-name: Build cpp project
+name: Build Win cpp project
 
 on:
   workflow_call:
@@ -7,16 +7,20 @@ on:
 
 jobs:
   test_cpp_build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     name: Build demo
     steps:
       - name: Checkout Files
         uses: actions/checkout@v4.1.4
-        
-      - name: Build Project
+      - name: Install cmake
+        shell: pwsh
         run: |
-         ls -l
-         mkdir demo-build
-         cd demo-build
-         cmake .. 
-         make
+         choco install cmake
+         cmake --version
+      - name: Generate Cmake Configuration
+        shell: pwsh
+        run: |
+          mkdir demo-build
+          cd demo-build
+          cmake .. -G"Unix Makefiles"
+          make          

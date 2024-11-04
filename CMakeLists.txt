@@ -7,26 +7,13 @@ project(snakegame VERSION 1.0)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-#specify the C++ standard
-# add_library(snakegame_compiler_flags INTERFACE)
-# target_compile_features(snakegame_compiler_flags INTERFACE cxx_std_11)
-
-# set(gcc_like_cxx "$<COMPILE_LANG_AND_ID:CXX,Clang,GNU>")
-# set(msvc_cxx "$<COMPILE_LANG_AND_ID:CXX,MSVC>")
-
-# Add warning flag compile options
-
-# target_compile_options(snakegame_compiler_flags INTERFACE
-#  "$<${gcc_like_cxx}:-Wall;-Wextra;-Wshadow;-Wformat=2;-Wunused>"
-#  "$<${msvc_cxx}:-W3>"
-# )
-
-# only use the flags for the build-tree
-
-# target_compile_options(snakegame_compiler_flags INTERFACE
-#  "$<${gcc_like_cxx}:$<BUILD_INTERFACE:-Wall;-Wextra;-Wshadow;-Wformat=2;-Wunused>>"
-#  "$<${msvc_cxx}:$<BUILD_INTERFACE:-W3>>"
-# )
+if (MSVC)
+    # warning level 4
+    add_compile_options(/W4)
+else()
+    # additional warnings
+    add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
 # add src, target links and libraries handled here
 add_subdirectory(src)

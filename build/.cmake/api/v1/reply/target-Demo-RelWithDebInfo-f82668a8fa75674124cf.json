@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/Release/Demo.exe"
+			"path" : "src/RelWithDebInfo/Demo.exe"
 		},
 		{
-			"path" : "src/Release/Demo.pdb"
+			"path" : "src/RelWithDebInfo/Demo.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 12,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -63,7 +63,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG -std:c++20"
 				},
 				{
 					"backtrace" : 4,
@@ -99,15 +99,15 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "MathLib::@7f9009904c14ea747e42"
 		},
 		{
 			"backtrace" : 2,
 			"id" : "GameScreen::@a27acbf0d8a4aa1e9518"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Demo::@145eef247bfb46b6828c",
@@ -116,21 +116,21 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /Zi /O2 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:x64 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "MathLib\\Release\\MathLib.lib",
+				"fragment" : "MathLib\\RelWithDebInfo\\MathLib.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "MathLib\\screen\\Release\\GameScreen.lib",
+				"fragment" : "MathLib\\screen\\RelWithDebInfo\\GameScreen.lib",
 				"role" : "libraries"
 			},
 			{

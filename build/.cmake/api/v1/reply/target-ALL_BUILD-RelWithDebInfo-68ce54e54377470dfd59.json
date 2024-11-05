@@ -20,13 +20,16 @@
 			"id" : "Demo::@145eef247bfb46b6828c"
 		},
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		},
-		{
 			"id" : "MathLib::@7f9009904c14ea747e42"
 		},
 		{
+			"id" : "GamePattern::@e16bef1627e1c18c9c5e"
+		},
+		{
 			"id" : "GameScreen::@a27acbf0d8a4aa1e9518"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",

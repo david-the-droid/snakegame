@@ -20,7 +20,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						4
+						5
 					]
 				},
 				{
@@ -46,7 +46,8 @@
 					"build" : "src/MathLib",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-src.MathLib-Debug-d714031bcf85ca6669ec.json",
 					"minimumCMakeVersion" : 
@@ -58,7 +59,22 @@
 					"source" : "src/MathLib",
 					"targetIndexes" : 
 					[
-						3
+						4
+					]
+				},
+				{
+					"build" : "src/MathLib/pattern",
+					"jsonFile" : "directory-src.MathLib.pattern-Debug-3aac616b02a16b3112da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/MathLib/pattern",
+					"targetIndexes" : 
+					[
+						2
 					]
 				},
 				{
@@ -73,7 +89,7 @@
 					"source" : "src/MathLib/screen",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
@@ -86,7 +102,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "Demo",
 					"targetIndexes" : 
@@ -95,7 +112,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -104,19 +122,26 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Debug-75acd81b3ddc235d62db.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-68ce54e54377470dfd59.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Demo::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Demo-Debug-d0f8746c374026a55f27.json",
+					"jsonFile" : "target-Demo-Debug-f38d3d1499d3af55ffbb.json",
 					"name" : "Demo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
+					"id" : "GamePattern::@e16bef1627e1c18c9c5e",
+					"jsonFile" : "target-GamePattern-Debug-892e306a8e957212b7c3.json",
+					"name" : "GamePattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "GameScreen::@a27acbf0d8a4aa1e9518",
 					"jsonFile" : "target-GameScreen-Debug-e7128e9a58c318e2b02f.json",
 					"name" : "GameScreen",
@@ -125,7 +150,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "MathLib::@7f9009904c14ea747e42",
-					"jsonFile" : "target-MathLib-Debug-0b9641fa9e497ef70979.json",
+					"jsonFile" : "target-MathLib-Debug-4d9c4400d07a951e723c.json",
 					"name" : "MathLib",
 					"projectIndex" : 0
 				},
@@ -157,7 +182,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						4
+						5
 					]
 				},
 				{
@@ -183,7 +208,8 @@
 					"build" : "src/MathLib",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-src.MathLib-Release-d714031bcf85ca6669ec.json",
 					"minimumCMakeVersion" : 
@@ -195,7 +221,22 @@
 					"source" : "src/MathLib",
 					"targetIndexes" : 
 					[
-						3
+						4
+					]
+				},
+				{
+					"build" : "src/MathLib/pattern",
+					"jsonFile" : "directory-src.MathLib.pattern-Release-3aac616b02a16b3112da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/MathLib/pattern",
+					"targetIndexes" : 
+					[
+						2
 					]
 				},
 				{
@@ -210,7 +251,7 @@
 					"source" : "src/MathLib/screen",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
@@ -223,7 +264,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "Demo",
 					"targetIndexes" : 
@@ -232,7 +274,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -241,19 +284,26 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Release-75acd81b3ddc235d62db.json",
+					"jsonFile" : "target-ALL_BUILD-Release-68ce54e54377470dfd59.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Demo::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Demo-Release-e127e4179ea7176be4b4.json",
+					"jsonFile" : "target-Demo-Release-cc378f3081a49e3a2a93.json",
 					"name" : "Demo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
+					"id" : "GamePattern::@e16bef1627e1c18c9c5e",
+					"jsonFile" : "target-GamePattern-Release-892e306a8e957212b7c3.json",
+					"name" : "GamePattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "GameScreen::@a27acbf0d8a4aa1e9518",
 					"jsonFile" : "target-GameScreen-Release-e29193d90ef45dda4fcd.json",
 					"name" : "GameScreen",
@@ -262,7 +312,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "MathLib::@7f9009904c14ea747e42",
-					"jsonFile" : "target-MathLib-Release-02ddb1406ab14f328736.json",
+					"jsonFile" : "target-MathLib-Release-60f4861a9dea00632ac7.json",
 					"name" : "MathLib",
 					"projectIndex" : 0
 				},
@@ -294,7 +344,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						4
+						5
 					]
 				},
 				{
@@ -320,7 +370,8 @@
 					"build" : "src/MathLib",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-src.MathLib-MinSizeRel-d714031bcf85ca6669ec.json",
 					"minimumCMakeVersion" : 
@@ -332,7 +383,22 @@
 					"source" : "src/MathLib",
 					"targetIndexes" : 
 					[
-						3
+						4
+					]
+				},
+				{
+					"build" : "src/MathLib/pattern",
+					"jsonFile" : "directory-src.MathLib.pattern-MinSizeRel-3aac616b02a16b3112da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/MathLib/pattern",
+					"targetIndexes" : 
+					[
+						2
 					]
 				},
 				{
@@ -347,7 +413,7 @@
 					"source" : "src/MathLib/screen",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
@@ -360,7 +426,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "Demo",
 					"targetIndexes" : 
@@ -369,7 +436,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -378,19 +446,26 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-MinSizeRel-75acd81b3ddc235d62db.json",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-68ce54e54377470dfd59.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Demo::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Demo-MinSizeRel-ab4c2f6897429bcd8109.json",
+					"jsonFile" : "target-Demo-MinSizeRel-5fd9a0a53049cbc5b0ab.json",
 					"name" : "Demo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
+					"id" : "GamePattern::@e16bef1627e1c18c9c5e",
+					"jsonFile" : "target-GamePattern-MinSizeRel-892e306a8e957212b7c3.json",
+					"name" : "GamePattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "GameScreen::@a27acbf0d8a4aa1e9518",
 					"jsonFile" : "target-GameScreen-MinSizeRel-cb579e5c10edda3f487a.json",
 					"name" : "GameScreen",
@@ -399,7 +474,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "MathLib::@7f9009904c14ea747e42",
-					"jsonFile" : "target-MathLib-MinSizeRel-db7a2543a3cd8efdd30f.json",
+					"jsonFile" : "target-MathLib-MinSizeRel-f11300c2d7c6e31238be.json",
 					"name" : "MathLib",
 					"projectIndex" : 0
 				},
@@ -431,7 +506,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						4
+						5
 					]
 				},
 				{
@@ -457,7 +532,8 @@
 					"build" : "src/MathLib",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"jsonFile" : "directory-src.MathLib-RelWithDebInfo-d714031bcf85ca6669ec.json",
 					"minimumCMakeVersion" : 
@@ -469,7 +545,22 @@
 					"source" : "src/MathLib",
 					"targetIndexes" : 
 					[
-						3
+						4
+					]
+				},
+				{
+					"build" : "src/MathLib/pattern",
+					"jsonFile" : "directory-src.MathLib.pattern-RelWithDebInfo-3aac616b02a16b3112da.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "src/MathLib/pattern",
+					"targetIndexes" : 
+					[
+						2
 					]
 				},
 				{
@@ -484,7 +575,7 @@
 					"source" : "src/MathLib/screen",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				}
 			],
@@ -497,7 +588,8 @@
 						0,
 						1,
 						2,
-						3
+						3,
+						4
 					],
 					"name" : "Demo",
 					"targetIndexes" : 
@@ -506,7 +598,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -515,19 +608,26 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-75acd81b3ddc235d62db.json",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-68ce54e54377470dfd59.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Demo::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Demo-RelWithDebInfo-33278ead815744e782ef.json",
+					"jsonFile" : "target-Demo-RelWithDebInfo-f82668a8fa75674124cf.json",
 					"name" : "Demo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 3,
+					"id" : "GamePattern::@e16bef1627e1c18c9c5e",
+					"jsonFile" : "target-GamePattern-RelWithDebInfo-892e306a8e957212b7c3.json",
+					"name" : "GamePattern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
 					"id" : "GameScreen::@a27acbf0d8a4aa1e9518",
 					"jsonFile" : "target-GameScreen-RelWithDebInfo-8f8d6dea1ccd8232b7bf.json",
 					"name" : "GameScreen",
@@ -536,7 +636,7 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "MathLib::@7f9009904c14ea747e42",
-					"jsonFile" : "target-MathLib-RelWithDebInfo-d154f0da61afed911d43.json",
+					"jsonFile" : "target-MathLib-RelWithDebInfo-84896cf6591c50a12ddb.json",
 					"name" : "MathLib",
 					"projectIndex" : 0
 				},

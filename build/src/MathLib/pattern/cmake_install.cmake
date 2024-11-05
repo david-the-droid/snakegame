@@ -1,4 +1,4 @@
-# Install script for directory: C:/repos_workspace/repos/git/snakegame/src/MathLib
+# Install script for directory: C:/repos_workspace/repos/git/snakegame/src/MathLib/pattern
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,12 +30,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/repos_workspace/repos/git/snakegame/build/src/MathLib/pattern/cmake_install.cmake")
-  include("C:/repos_workspace/repos/git/snakegame/build/src/MathLib/screen/cmake_install.cmake")
-
 endif()
 

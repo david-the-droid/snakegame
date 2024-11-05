@@ -1,6 +1,8 @@
 #ifndef SCREEN_H
 #define SCREEN_H
 
+#include "../pattern/pattern.h"
+
 class ConsoleScreen {
 private:
   unsigned int snakeGameRowSize;
@@ -11,6 +13,7 @@ private:
 
 public:
   void CreateScreen();
+  void DrawOnScreen(OutputToRender_t *screenOutputPtr);
 };
 
 #endif

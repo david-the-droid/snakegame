@@ -28,3 +28,8 @@ jobs:
         working-directory: ./cpp_build
         run: |
           make     
+      - name: Upload build files
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Cpp-build-output
+          path: ./cpp_build

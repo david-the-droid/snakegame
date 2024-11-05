@@ -1,15 +1,15 @@
-add_subdirectory(game_engine)
 
-# add executable
+# add library sub-directory
+add_subdirectory(MathLib)
 
-add_executable(snakegame main_game.cpp)
+add_executable(Demo main.cpp)
 
-# link libraries to target
-target_link_libraries(snakegame PUBLIC screen snake_game_engine)
+# link executable to library
+target_link_libraries(Demo PUBLIC MathLib MathSqrtLib)
 
-target_include_directories(snakegame PUBLIC 
-						   "${PROJECT_SOURCE_DIR}/game_engine"
-						   "${PROJECT_SOURCE_DIR}/game_engine/screen"
-						   )
-						   
-						   
+# set target include directories
+
+target_include_directories(Demo PUBLIC
+                          "${PROJECT_SOURCE_DIR}/MathLib"
+						  "${PROJECT_SOURCE_DIR}/MathLib/MathSqrtLib"
+                          )

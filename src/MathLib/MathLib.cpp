@@ -1,6 +1,6 @@
 #include "MathLib.h"
 
-#include "MathSqrtLib/MathSqrtLib.h"
+#include "screen/screen.h"
 
 unsigned int AddNumbers(unsigned int Num1, unsigned int Num2)
 {
@@ -9,5 +9,7 @@ unsigned int AddNumbers(unsigned int Num1, unsigned int Num2)
 
 unsigned int SquareRootNumbers(unsigned int Num1)
 {
-  return SquareRoot(Num1);
+  ConsoleScreen Obj1;
+
+    Obj1.CreateScreen();
 }

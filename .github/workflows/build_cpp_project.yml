@@ -31,4 +31,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: cpp-build-output
-          path: ./cpp-build # or path/to/artifact
+          path: ../cpp-build # or path/to/artifact

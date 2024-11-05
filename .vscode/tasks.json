@@ -8,9 +8,9 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${workspaceFolder}/src/*.cpp",
-                "${workspaceFolder}/src/MathLib/*.cpp",
-                "${workspaceFolder}/src/MathLIb/screen/*.cpp",
-                "${workspaceFolder}/src/MathLIb/game_logic/*.cpp",
+                "${workspaceFolder}/src/game_engine/*.cpp",
+                "${workspaceFolder}/src/game_engine/screen/*.cpp",
+                "${workspaceFolder}/src/game_engine/game_logic/*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

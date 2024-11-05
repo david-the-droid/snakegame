@@ -2,7 +2,7 @@
 #include <string>
 #include <time.h>
 
-#include "MathLib/game_engine.h"
+#include "game_engine/game_engine.h"
 
 int main() {
   GameLogic Game;

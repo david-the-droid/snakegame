@@ -8,8 +8,6 @@ on:
 jobs:
   test_cpp_build:
     runs-on: windows-latest
-    env: 
-      cmake-build-directory: ./cpp_build
     name: Build C++ (winOS)
     steps:
       - name: Checkout Files
@@ -22,7 +20,11 @@ jobs:
       - name: Generate Cmake Configuration
         shell: pwsh
         run: |
-          mkdir ${{env.cpp_build}}
+          mkdir cpp_build
           cd ${{env.cpp_build}}
           cmake .. -G"Unix Makefiles"
-          make          
+      - name: Build project
+        shell: pwsh
+        working-directory: ./cpp_build
+        run: |
+          make     

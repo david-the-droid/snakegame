@@ -5,7 +5,7 @@ add_subdirectory(game_engine)
 add_executable(snakegame main_game.cpp)
 
 # link libraries to target
-target_link_libraries(snakegame PUBLIC screen snake_game_logic snake_game_engine)
+target_link_libraries(snakegame PUBLIC screen snake_game_engine)
 
 target_include_directories(snakegame PUBLIC 
 						   "${PROJECT_SOURCE_DIR}/game_engine"

@@ -1,0 +1,1 @@
+add_library(SnakeGameLogic snake_game_logic.cpp)

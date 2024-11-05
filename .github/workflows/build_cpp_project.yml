@@ -1,5 +1,5 @@
 ---
-name: Build C++ project (winOS)
+name: Build C++ project
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
 jobs:
   test_cpp_build:
     runs-on: windows-latest
-    name: Build C++ project (winOS)
+    name: Build C++ (winOS)
     steps:
       - name: Checkout Files
         uses: actions/checkout@v4.1.4

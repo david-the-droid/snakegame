@@ -33,3 +33,7 @@
 
 # backup text files 
 *.bak
+
+# Ignore local build files
+
+build/

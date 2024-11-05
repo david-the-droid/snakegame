@@ -1,6 +1,0 @@
-C:/repos_workspace/repos/git/snakegame/build/CMakeFiles/ALL_BUILD.dir
-C:/repos_workspace/repos/git/snakegame/build/CMakeFiles/ZERO_CHECK.dir
-C:/repos_workspace/repos/git/snakegame/build/src/CMakeFiles/Demo.dir
-C:/repos_workspace/repos/git/snakegame/build/src/MathLib/CMakeFiles/MathLib.dir
-C:/repos_workspace/repos/git/snakegame/build/src/MathLib/pattern/CMakeFiles/GamePattern.dir
-C:/repos_workspace/repos/git/snakegame/build/src/MathLib/screen/CMakeFiles/GameScreen.dir

@@ -1,6 +1,6 @@
 
 # add library sub-directory
-add_subdirectory(MathLib)
+add_subdirectory(game_engine)
 
 add_executable(Demo main.cpp)
 

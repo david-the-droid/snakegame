@@ -1,2 +1,0 @@
-C:/MinGW/bin/ar.exe qc libgame_engine.a CMakeFiles/game_engine.dir/game_engine.cpp.obj
-C:/MinGW/bin/ranlib.exe libgame_engine.a

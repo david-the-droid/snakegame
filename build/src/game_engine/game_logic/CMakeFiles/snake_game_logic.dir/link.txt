@@ -1,2 +1,0 @@
-C:/MinGW/bin/ar.exe qc libsnake_game_logic.a CMakeFiles/snake_game_logic.dir/snake_game_logic.cpp.obj
-C:/MinGW/bin/ranlib.exe libsnake_game_logic.a

@@ -11,12 +11,12 @@ target_link_libraries(Demo INTERFACE GamePattern)
 # set target include directories
 
 target_include_directories(Demo PUBLIC
-                          "${PROJECT_SOURCE_DIR}/MathLib"
-						  "${PROJECT_SOURCE_DIR}/MathLib/screen"
-						  "${PROJECT_SOURCE_DIR}/MathLib/game_logic"
+                          "${PROJECT_SOURCE_DIR}/game_engine"
+						  "${PROJECT_SOURCE_DIR}/game_engine/screen"
+						  "${PROJECT_SOURCE_DIR}/game_engine/game_logic"
                           )
 						
 						
 target_include_directories(Demo INTERFACE
-						  "${PROJECT_SOURCE_DIR}/MathLib/pattern"
+						  "${PROJECT_SOURCE_DIR}/game_engine/pattern"
                           )

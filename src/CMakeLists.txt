@@ -5,7 +5,7 @@ add_subdirectory(MathLib)
 add_executable(Demo main.cpp)
 
 # link executable to library
-target_link_libraries(Demo PUBLIC MathLib GameScreen SnakeGameLogic)
+target_link_libraries(Demo PUBLIC GameEngine GameScreen SnakeGameLogic)
 target_link_libraries(Demo INTERFACE GamePattern)
 
 # set target include directories

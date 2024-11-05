@@ -1,15 +1,13 @@
-#include "MathLib/MathLib.h"
-
 #include <iostream>
+#include <string>
+#include <time.h>
+
+#include "MathLib/game_engine.h"
 
 int main() {
-    std::cout << "Hello World!\n";
+  GameLogic Game;
+  Game.GameEngineInitialisation();
+  Game.GameEngine();
 
-    unsigned int result = AddNumbers(10, 20);
-
-    unsigned int result1 = SquareRootNumbers(10);
-
-    std::cout << "Result: " << result << " " << result1;
-
-    return 0;
+  return 0;
 }

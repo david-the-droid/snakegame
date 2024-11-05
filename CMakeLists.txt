@@ -36,3 +36,4 @@ target_include_directories(SnakeGame PUBLIC
 
 target_include_directories(SnakeGame INTERFACE
 						  "${PROJECT_SOURCE_DIR}/src/game_engine/pattern"
+						  )

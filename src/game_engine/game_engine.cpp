@@ -1,4 +1,6 @@
 #include "game_engine.h"
+#include "game_logic/snake_game_logic.h"
+#include "pattern/pattern.h"
 #include "screen/screen.h"
 
 #define BOARDER_LEN (36U)
@@ -10,7 +12,7 @@
 typedef enum { start_game = 0, play_game, end_game } states;
 
 static states gameState;
-// static SnakeGameLogic SnakeLogic;
+static SnakeGameLogic SnakeLogic;
 static ConsoleScreen GameScreen;
 
 void GameLogic::GameEngineInitialisation() { gameState = start_game; }
@@ -21,11 +23,11 @@ void GameLogic::GameEngine() {
 
     GameScreen.CreateScreen();
 
-//    OutputToRender_t *gameBoarder;
-//    gameBoarder = SnakeLogic.GenerateBoarder(BOARDER_WIDTH, BOARDER_HEIGHT,
-//                                             SCREEN_VERTICAL_OFFSET);
+    OutputToRender_t *gameBoarder;
+    gameBoarder = SnakeLogic.GenerateBoarder(BOARDER_WIDTH, BOARDER_HEIGHT,
+                                             SCREEN_VERTICAL_OFFSET);
 
-//    GameScreen.DrawOnScreen(gameBoarder);
+    GameScreen.DrawOnScreen(gameBoarder);
 
     break;
 

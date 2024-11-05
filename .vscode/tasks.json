@@ -10,6 +10,8 @@
                 "${workspaceFolder}/src/*.cpp",
                 "${workspaceFolder}/src/game_engine/*.cpp",
                 "${workspaceFolder}/src/game_engine/screen/*.cpp",
+                "${workspaceFolder}/src/game_engine/game_logic/*.cpp",
+                "${workspaceFolder}/src/game_engine/pattern/*.h",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],

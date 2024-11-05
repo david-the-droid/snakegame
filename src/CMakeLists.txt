@@ -13,6 +13,7 @@ target_include_directories(snakegame INTERFACE
 						   )
 
 target_include_directories(snakegame PUBLIC 
+                           "${PROJECT_BINARY_DIR}/src"
 						   "${PROJECT_SOURCE_DIR}/src/game_engine"
 						   "${PROJECT_SOURCE_DIR}/src/game_engine/screen"
 						   "${PROJECT_SOURCE_DIR}/src/game_engine/game_logic"

@@ -27,4 +27,8 @@ jobs:
         shell: pwsh
         working-directory: ./cpp_build
         run: |
-          make     
+          make    
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cpp-build-output
+          path: ./cpp-build # or path/to/artifact

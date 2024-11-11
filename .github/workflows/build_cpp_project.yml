@@ -25,10 +25,11 @@ jobs:
           cmake .. -G"Unix Makefiles"
       - name: Build project
         shell: pwsh
-        working-directory: ./cpp_build
+#        working-directory: ./cpp_build
         run: |
+          cd ./cpp_build
           make    
       - uses: actions/upload-artifact@v4
         with:
           name: cpp-build-output
-          path: ../cpp-build # or path/to/artifact
+          path: ./cpp-build # or path/to/artifact

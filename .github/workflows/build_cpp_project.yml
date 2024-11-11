@@ -11,7 +11,7 @@ jobs:
     name: Build C++ (winOS)
     steps:
       - name: Checkout Files
-        uses: actions/checkout@v4.1.4
+        uses: actions/checkout@v4
       - name: Install cmake
         shell: pwsh
         run: |

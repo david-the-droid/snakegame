@@ -1,6 +1,6 @@
 name: Lint Code Base
 
-permissions: write
+permissions: read-all
 
 on:
   workflow_dispatch:

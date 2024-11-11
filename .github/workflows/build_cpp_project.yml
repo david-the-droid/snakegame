@@ -1,6 +1,8 @@
 ---
 name: Build C++ project
 
+permissions: read-all
+
 on:
   workflow_dispatch:
   pull_request:
@@ -15,8 +17,8 @@ jobs:
       - name: Install cmake
         shell: pwsh
         run: |
-         choco install cmake
-         cmake --version
+          choco install cmake
+          cmake --version
       - name: Generate Cmake Configuration
         shell: pwsh
         run: |
@@ -25,10 +27,10 @@ jobs:
           cmake .. -G"Unix Makefiles"
       - name: Build project
         shell: pwsh
-#        working-directory: ./cpp_build
+        #        working-directory: ./cpp_build
         run: |
           cd ./cpp_build
-          make    
+          make
       - uses: actions/upload-artifact@v4
         with:
           name: cpp-build-output

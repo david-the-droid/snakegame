@@ -5,8 +5,8 @@
 ---
 version: 2
 updates:
-  - package-ecosystem: "github-actions" 
+  - package-ecosystem: "github-actions"
     target-branch: "main"
-    directory: "/" 
+    directory: "/"
     schedule:
       interval: "weekly"
